@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>add-product</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<form name="add_product" action="add_product.php" method="POST" id="add_product" class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-2"> </div>
+				<div class="col-sm-5" align="left">
+					<br>
+					<h4> เพิ่มสินค้า </h4>
+				</div>
+				<input name="Admin_level" type="hidden" id="Admin_level" value="2" />
+			</div>
+			<div class="form-group">
+				<div class="col-sm-2" align="right"> ชื่อสินค้า : </div>
+				<div class="col-sm-5" align="left">
+					<input name="p_product" type="text" class="form-control" id="p_product" placeholder="ชื่อสินค้า" minlength="2" />
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-2" align="right"> ราคา : </div>
+				<div class="col-sm-5" align="left">
+					<input name="p_price" type="text" class="form-control" placeholder="ราคา" id="p_price" minlength="2" />
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-2" align="right"> ประเภท : </div>
+				<div class="col-sm-5" align="left">
+					<select class="form-control" id="exampleFormControlSelect1">
+						<option></option>
+						<option>ทอง</option>
+						<option>เงิน</option>
+						<option>ทองแดง</option>
+						<option>เหล็ก</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-2" align="right"> รายละเอียด : </div>
+				<div class="col-sm-6" align="left">
+					<textarea name="p_detail" class="form-control"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-2" align="right"> รูปสินค้า : </div>
+				<div class="col-sm-6" align="left">
+					<input type="file" name="p_image">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-2"> </div>
+				<div class="col-sm-6">
+					<button type="submit" class="btn btn-primary" id="btn"> บันทึก </button>
+				</div>
+
+			</div>
+		</form>
+		<div>
+</body>
+
+</html>
